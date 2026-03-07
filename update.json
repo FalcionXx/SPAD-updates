@@ -1,10 +1,10 @@
 {
   "appId": "com.spad.app",
   "channel": "stable",
-  "latestVersionCode": 10001,
-  "latestVersionName": "1.01",
-  "apkUrl": "https://github.com/FalcionXx/SPAD-updates/releases/download/v1.01/app-release.apk",
-  "sha256": "replace-with-real-sha256",
-  "publishedAt": "2026-03-07T12:00:00Z",
+  "latestVersionCode": 10002,
+  "latestVersionName": "1.02",
+  "apkUrl": "https://github.com/FalcionXx/SPAD-updates/releases/download/v1.02/app-release.apk",
+  "sha256": "c111e0f391c46092ef7c8c14c5113410a04fb42a01c85c6544c722bc284806c8",
+  "publishedAt": "2026-03-07T10:57:02Z",
   "notes": "Pierwszy publiczny release updatera."
 }
