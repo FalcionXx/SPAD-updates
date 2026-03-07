@@ -1,0 +1,39 @@
+name: validate-update-manifest
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Validate update.json
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("update.json")
+          data = json.loads(path.read_text())
+          required = [
+              "appId",
+              "channel",
+              "latestVersionCode",
+              "latestVersionName",
+              "apkUrl",
+              "sha256",
+              "publishedAt",
+              "notes",
+          ]
+          missing = [key for key in required if key not in data]
+          if missing:
+              raise SystemExit(f"Missing keys: {missing}")
+          if not str(data["apkUrl"]).startswith("https://github.com/"):
+              raise SystemExit("apkUrl must point to GitHub")
+          if len(str(data["sha256"]).strip()) != 64:
+              raise SystemExit("sha256 must be 64 hex characters")
+          print("update.json OK")
+          PY
