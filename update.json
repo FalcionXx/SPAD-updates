@@ -1,10 +1,10 @@
 {
   "appId": "com.spad.app",
   "channel": "stable",
-  "latestVersionCode": 20005,
-  "latestVersionName": "2.01",
-  "apkUrl": "https://github.com/FalcionXx/SPAD-updates/releases/download/v2.01/app-release.apk",
-  "sha256": "aded8b0f7eda50195e84dc6419b439a265197e4c6211cdf4aef0a5794eb2897c",
-  "publishedAt": "2026-03-12T16:55:52Z",
-  "notes": "Dużo płynniejsza mapa 3D, poprawione logowanie z klawiaturą i dopracowany banner aktualizacji."
+  "latestVersionCode": 20006,
+  "latestVersionName": "2.02",
+  "apkUrl": "https://github.com/FalcionXx/SPAD-updates/releases/download/v2.02/app-release.apk",
+  "sha256": "1d9f7315a35c5145e9cd5d28de06058d660d90fac90df281659d03f2bb52d553",
+  "publishedAt": "2026-03-16T15:21:49Z",
+  "notes": "Poprawione logowanie SPAD i dalsze usprawnienia mapy oraz aplikacji."
 }
